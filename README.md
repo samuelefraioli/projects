@@ -6,7 +6,6 @@ interamente da me.
 Non ho quindi incluso né progetti sviluppati in team, né progetti sviluppati con e per Beije, dato che non sarebbe
 stato corretto pubblicizzarli a mio vantaggio.
 
-Le cartelle sono divise in base ai linguaggi utilizzati all'interno dei progetti (prima parte del nome) e per tipo di
-progetto (seconda parte del nome).
+Le cartelle sono divise in base ai linguaggi utilizzati all'interno dei progetti
 
 Buona lettura!
