@@ -1,0 +1,1633 @@
+html,body {
+	height: 100%;
+	margin:0;
+	padding:0;
+}
+article{
+    color:black;
+	font:16px;
+	font-family: 'open sans',sans-serif;
+	width: 100%;
+	color:#2c2c2c;
+}
+
+body {
+	background:#f2eeec;
+	color:#fff;
+	font:16px/28px;
+	font-family: 'open sans',sans-serif;
+	line-height:22px;
+}
+
+aside {
+    float: right;
+}
+
+h1,h2 {
+	text-transform:uppercase;
+	font-weight:400;
+}
+h4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	margin: 30px 0;
+	color:#555555;
+	text-transform: uppercase;
+	font-family:oswald;
+	font-size: 60px;
+}
+
+h4:before,
+h4:after {
+    content: '';
+    border-top: 4px solid;
+    margin: 0 80px 0 0;
+    flex: 1 0 20px;
+}
+
+h4:after {
+    margin: 0 0 0 80px;
+}
+
+
+a{
+color:#0000FF;
+}
+
+iframe{
+border:0px;
+}
+
+
+#breadcrumb a{font-size:15px;color: #a0a0a0;text-decoration: none;padding-right: 20px;}
+#breadcrumb a:hover{font-size:18px;color: #003366;text-decoration: underline;}
+#breadcrumb em{font-size:15px;color: #39c;font-style:normal}
+
+
+/******************-struttura header-*******************/
+
+#header {	
+	width:100%;
+	min-height: 116px;
+	background: url(img/bg-header.png) repeat-x;
+	position: relative;
+	top:0;
+	z-index:20;
+	}
+	
+#nav-container{width:960px;margin:0 auto;}
+	
+	h1{margin:0;padding:0;}
+		
+#logo{
+    bottom:-20px;
+	position:relative;
+	float:left;
+    display:block; 
+	width:108px; 
+	height: 91px; 
+	text-indent: -9999px;
+	background: url(img/radio-wave-logo-unito.png);
+	}
+
+	/*- Icone social -*/
+	#social {position: absolute; top:35px; right: 0;height: 30px; width:100px; }
+		
+	#social a{display: block;float:left; height:30px; width:30px; margin-right: 10px}
+		
+	#fb{background: url(img/facebook.png) no-repeat center center}
+		
+	#tw{background: url(img/twitter.png) no-repeat center center}
+		
+	#cta {position: absolute; top:0px; right: 0;height: 30px; width:30px; }
+	#cta a{display: block;float:right; height:33px; width:140px; margin-right: 120px}
+		
+	#ascolta-la-radio {background: url(img/progetto-radio-logo.png) no-repeat center center}
+				
+
+	/*- Nav bar -*/
+	#nav {
+	float:right;
+	width:800px;
+	min-height: 80px;
+	margin:0 auto;
+	}
+			
+	#nav ul {
+	bottom:-40px;
+	position:relative;
+	margin:0;
+	padding:0;
+	float:left;
+	width:100%;
+	font-family:oswald; 
+	text-transform:uppercase; 
+	list-style: none;
+	display:inline-block;
+	}
+
+				
+	#nav ul li{float:left}
+	#nav ul li a{color:#322a2b;padding:15px 15px 26px 15px;text-decoration:none;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+			
+	#nav ul li a:hover{background: #322a2b; color:#fff;}
+    #nav li.active a {background: #322a2b;border: 1px #fff; color:#fff;}
+
+/******************fine struttura header*******************/
+
+		
+/******** /Homepage/ ********/
+
+
+/*- Banner news-*/
+
+#banner-home {
+	top: -120px;
+	position:relative;
+	height: 600px;
+	overflow: hidden;
+	background: url(img/homepage-studente-auricolari-radio-unito.jpg) no-repeat center;
+	filter: drop-shadow(5px 5px 10px black); 
+	background-size: cover;
+}
+	
+#banner-home h1{
+	font-family:oswald; 
+	text-transform:uppercase; 
+	position:relative;
+	text-align: center;
+    margin:290px 0 110px 0;
+	padding:20px; 
+	font-size: 60px;
+	text-shadow: 2px 2px 4px black;
+	border-width: 5px;
+	}
+	
+/*--->pulsante-radio<---*/
+.button {
+	font-family:oswald; 
+	letter-spacing: 0.5px;
+	text-transform:uppercase;
+	color: #fff;
+	position:absolute;
+	text-align: center;
+	top: 65%;
+	right: 45%;
+	padding: 12px 25px;
+	font-size: 25px;
+	opacity: 0.8;
+	text-decoration: none;
+	background: #003366;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+    }
+
+.button:hover{
+	opacity: 0.8;
+	color:#FFD700;
+	text-decoration:none;
+	}
+	
+.titolo-home{
+    top:1200px;		
+	font-family:oswald; 
+	text-align:center;
+	margin-top: -40px;
+	padding: 0;
+	font: inherit;
+}
+	
+/*- Sezione-palinsesto -*/
+	
+.new-section {
+	margin: 0 auto;
+	width:960px;
+	z-index: 12;
+	position:relative;
+	}
+ 	
+.box-radio{width:300px; float:left; margin: 60px 0px -10px 30px;}
+.box-radio:first-child{margin:60px 0 -10px 0;}
+.box-radio h3{
+		margin:-5px 0 0 0;
+		padding:20px 20px 20px 10px; 
+		background: #003366;
+		color:#fff;font-family:oswald; 
+		text-transform:uppercase;
+		font-weight: normal;
+		}	
+.box-radio p{color:#6d6b6a;font-size:12px}
+.box-radio a{font-family:oswald; text-transform:uppercase;font-weight: normal;color:#322a2b; text-decoration:none;} 
+.box-radio a:hover {color:#333;text-decoration:underline;}
+
+.pulsante {
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-family: oswald;
+	font-size: 18px;
+	letter-spacing: 0.8px;
+	color: #fff;
+    position: relative;
+	top:50px;
+    left: 350px;
+    right: 350px;
+	padding: 10px 20px;
+	background: #003366;
+	border-radius: 500px;
+}
+	
+.pulsante:hover{
+	color:#FFD700;
+	text-decoration:none;
+	}
+
+
+#banner2 {
+	margin:120px 0 110px 0;
+	position:relative;
+	height: 400px;
+	overflow: hidden;
+	background: url(img/prove-in-sala-registrazione-radio-unito.jpg) no-repeat center;
+	background-size: cover;
+	filter: drop-shadow(10px 10px 10px black);
+}	
+
+/*- Banner news-*/
+
+.titolo-home2{ 
+    top:1200px;
+	font-family:oswald; 
+	text-align:center;
+	margin-top: 50px;
+	padding: 0;
+	font: inherit;
+	}
+	
+
+/*- Box news -*/
+
+#content {
+	margin: 0 auto;
+	width:960px;
+	z-index: 12;
+	position:relative;
+	}
+	
+    .box-news{width:300px; float:left; margin: 60px 0px 20px 30px;}
+    .box-news:first-child{margin: 60px 0 20px 0;}
+    .box-news h3{
+		margin:-5px 0 0 0;
+		padding:20px 20px 20px 15px; 
+		background: #003366;
+		color:#fff; font-family:oswald; 
+		text-transform:uppercase;
+		font-weight: normal;
+		}
+		
+	.box-news p{color:#6d6b6a;font-size:12px}
+	.box-news a{font-family:oswald; text-transform:uppercase;font-weight: normal;
+	color:#322a2b; text-decoration:none;}
+
+.box-news a:hover {
+	color:#333;
+	text-decoration:underline;
+}	
+
+
+.pulsante2 {
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-family: oswald;
+	font-size: 18px;
+	letter-spacing: 0.8px;
+	color: #fff;
+    position: relative;
+	top:35px;
+    left: 400px;
+    right: 400px;
+	padding: 10px 20px;
+	background: #003366;
+	border-radius: 500px;
+}
+
+.pulsante2:hover{
+	color:#FFD700;
+	text-decoration:none;
+	}
+	
+	#banner3 {
+	margin:100px 0 110px 0;
+	position:relative;
+	height: 400px;
+	overflow: hidden;
+	background: url(img/news-unito-radio-immagine-sezione.jpg) no-repeat center;
+	background-size: cover;
+	filter: drop-shadow(20px 10px 10px black);
+}
+
+
+/*- Box eventi -*/
+
+.section-event {
+	margin: 0 auto;
+	width:960px;
+	z-index: 12;
+	position:relative;
+	}
+	
+	.box-eve{width:300px; float:left; margin: 60px 0px 60px 30px;}
+	.box-eve:first-child{margin: 60px 0 20px 0;}
+
+	.box-eve h3{
+		margin:-5px 0 0 0;
+		padding:20px 20px 20px 20px; 
+		background: #003366;
+		color:#fff; font-family:oswald; 
+		text-transform:uppercase;
+		font-weight: normal;
+		}
+		
+		
+	.box-eve p{color:#6d6b6a;font-size:12px}
+	.box-eve a{font-family:oswald; text-transform:uppercase;font-weight: normal;
+	color:#322a2b; text-decoration:none;}
+
+    .box-eve a:hover {
+	color:#333;
+	text-decoration:underline;
+    }
+	
+.pulsante3 {
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-family: oswald;
+	font-size: 18px;
+	letter-spacing: 0.8px;
+	color: #fff;
+    position: relative;
+	top:-10px;
+    left: 400px;
+    right: 400px;
+	padding: 10px 20px;
+	background: #003366;
+	border-radius: 500px;
+}
+	
+.pulsante3:hover{
+	color:#FFD700;
+	text-decoration:none;
+	}
+	
+#banner-eventi2 {
+	margin-top:50px;
+	position:relative;
+	height: 400px;
+	overflow: hidden;
+	background: url(img/eventi-immagine-portata-radio-unito.jpg) no-repeat center;
+	background-size: cover;
+	filter: drop-shadow(20px 10px 10px black);
+}
+
+
+/******** Pagina playlist ********/
+
+.titlolo-playlist{ 
+	font-family:oswald; 
+	text-align:center;
+	margin-top: -70px;
+	padding: 0;
+	font: inherit;
+}
+
+/*- Banner playlist -*/
+
+#banner-playlist {
+	top: -120px;
+	position:relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(img/playlist-immagine-radio-unito.jpg) no-repeat center;
+	filter: drop-shadow(5px 5px 10px black); 
+	background-size: cover;
+}
+	
+#banner-playlist h1{
+	font-family:oswald; 
+	text-transform:uppercase; 
+	position:relative;
+	text-align: center;
+    margin:240px 0 110px 0;
+	padding:20px; 
+	font-size: 60px;
+	text-shadow: 2px 2px 4px black;
+	border-width: 5px;
+	}
+	
+.button-sp {
+	font-family:oswald; 
+	letter-spacing: 0.5px;
+	text-transform:uppercase;
+	color: #fff;
+	position:absolute;
+	text-align: center;
+	top: 65%;
+	right: 40%;
+	padding: 12px 25px;
+	font-size: 25px;
+	opacity: 0.8;
+	text-decoration: none;
+	background: #003366;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+    }
+
+.button-sp:hover{
+	opacity: 0.8;
+	color:#FFD700;
+	text-decoration:none;
+	}
+	
+/*- Banner playlist -*/
+	
+.grid-container-playlist {
+  margin-top:40px;
+  margin-left: 30px;
+  	width:960px;
+	z-index: 12;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  margin-right: 30px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.titolo-playlist{
+	margin-top:-70px;
+}
+/*- Menu-secondario-playlist -*/
+
+ul#menu-secondario {
+    font-family: Oswald;
+	text-transform: uppercase;
+    font-size: 20px;
+    margin: 40px 30px 30px 30px;
+    padding: 10px;
+    list-style: none;
+	filter: drop-shadow(10px 10px 3px #696969);
+}
+ul#menu-secondario li {
+    background-color: #003366;
+    display: block;
+	text-align:center;
+    width: 200px;
+    height: 60px;
+    margin: 2px 2px 0 0;
+}
+ul#menu-secondario li a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    line-height: 30px;
+	text-align:center;
+	padding-top:15px;
+    padding-right: 30px;
+	padding-left: 30px;
+    text-decoration: none;
+    width: 135px; 
+    height: 30px;
+}
+ul#menu-secondario li.active, ul#menu-secondario li:hover {
+    background-color: #322a2b;
+    border: 1px solid #fff;
+}
+
+/*-menù-playlist-jazz-*/
+
+#breadcrumb-playlist{margin-top:80px;}
+#breadcrumb-playlist a{margin-bottom:-80px;font-size:15px;color: #a0a0a0;text-decoration: none; }
+#breadcrumb-playlist a:hover{margin-bottom:-80px;font-size:18px;color: #003366;text-decoration: underline;}
+#breadcrumb-playlist em{font-size:15px;color: #39c;font-style:normal;margin-left:15px;}
+.breadcrumb{margin-left:40px;}
+.breadcrumb2{margin-left:15px;}
+
+.grid-container-playlist-r {
+  margin-top:20px;
+  margin-left: 30px;
+  	width:960px;
+	z-index: 12;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+ul#menu-playlist {
+    font-family: Oswald;
+	text-transform: uppercase;
+    font-size: 20px;
+    margin: 20px 30px 30px 30px;
+    padding: 10px;
+    list-style: none;
+	filter: drop-shadow(10px 10px 3px #696969);
+}
+ul#menu-playlist li {
+    background-color: #003366;
+    display: block;
+	text-align:center;
+    width: 200px;
+    height: 60px;
+    margin: 2px 2px 0 0;
+}
+ul#menu-playlist li a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    line-height: 30px;
+	text-align:center;
+	padding-top:15px;
+    padding-right: 30px;
+	padding-left: 30px;
+    text-decoration: none;
+    width: 135px; 
+    height: 30px;
+}
+ul#menu-playlist li.active, ul#menu-playlist li:hover {
+    background-color: #322a2b;
+    border: 1px solid #fff;
+}
+
+#banner-playlist2 {
+	margin-top:60px;
+	position:relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(img/playlist-immagine-sezione-radiowave-unito.jpg) repeat center;
+	background-size: cover;
+	filter: drop-shadow(20px 10px 10px black);
+}
+
+/* tabella palinsesto */
+
+#banner-palinsesto {
+	top: -120px;
+	position:relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(img/le-origini-radiowave-unito-radio.jpg) no-repeat center;
+	filter: drop-shadow(5px 5px 10px black); 
+	background-size: cover;
+}
+	
+#banner-palinsesto h1{
+	font-family:oswald; 
+	text-transform:uppercase; 
+	position:relative;
+	text-align: center;
+    margin:250px 0 110px 0;
+	padding:20px; 
+	font-size: 70px;
+	text-shadow: 2px 2px 4px black;
+	border-width: 5px;
+	}
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+.titolo-palinsesto{ 
+	font-family:oswald; 
+	text-align:center;
+	margin: -70px 0px 80px 0px;
+	padding: 0;
+	font: inherit;
+}
+/****** tabella plinsesto *******/
+
+/**intestazione-titoli**/
+
+.struttura-tabella th {
+  font-weight: bold;
+  font-size:30px;
+  text-align: left;
+  color: #e6b60b;
+}
+
+/**struttura e dimensioni celle**/
+
+.struttura-tabella td {
+	  font-weight: normal;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.struttura-tabella {
+	  text-align: left;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+	  top: 80px;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.struttura-tabella td, .struttura-tabella th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Colore sfondo celle */
+.struttura-tabella tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+/* Colore celle(even) */
+.struttura-tabella tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+.struttura-tabella th {
+	  background-color: #1F2739;
+}
+
+.struttura-tabella td:first-child { color: #fff; }
+
+/*link-programma*/
+
+.click:hover {
+  background-color: #e6b60b;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  
+  box-shadow: #e6b60b -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+}
+
+.click a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.pulsante-palinsesto {
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-family: oswald;
+	font-size: 18px;
+	letter-spacing: 0.8px;
+	color: #fff;
+    position: relative;
+	top:-80px;
+    left: 700px;
+    right: 500px;
+	padding: 10px 20px;
+	border: solid 2px white;
+	background: #003366;
+	border-radius: 500px;
+}
+	
+.pulsante-palinsesto:hover{
+	color:#FFD700;
+	text-decoration:none;
+	}
+	
+#banner-palinsesto2 {
+	margin-top:-20px;
+	position:relative;
+	height: 400px;
+	overflow: hidden;
+	background: url(img/palinsesto-sezione-radio-wave-torino.jpg) no-repeat center;
+	background-size: cover;
+	filter: drop-shadow(20px 10px 10px black);
+}
+
+/********news*******/
+.titolo-news{ 
+	font-family:oswald; 
+	text-align:center;
+	margin-top: -50px;
+	padding: 0;
+	font: inherit;
+}
+
+#banner-news {
+	top: -120px;
+	position:relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(img/news-immagine-portata-unito.jpg) no-repeat top;
+	filter: drop-shadow(5px 5px 10px black); 
+	background-size: cover;
+}
+	
+#banner-news h1{
+	font-family:oswald; 
+	text-transform:uppercase; 
+	position:relative;
+	text-align: center;
+    margin:240px 0 110px 0;
+	padding:20px; 
+	font-size: 70px;
+	text-shadow: 2px 2px 4px black;
+	border-width: 5px;
+	}
+
+ul#menu-news {
+    font-family: Oswald;
+	text-transform: uppercase;
+    font-size: 20px;
+    margin: 40px 60px 0px 0px;
+    padding: 10px;
+    list-style: none;
+	filter: drop-shadow(10px 10px 3px #696969);
+}
+ul#menu-news li {
+    background-color: #003366;
+    display: block;
+	text-align:center;
+    width: 200px;
+    height: 60px;
+    margin: 2px 2px 0 0;
+}
+ul#menu-news li a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    line-height: 30px;
+	text-align:center;
+	padding-top:15px;
+    padding-right: 30px;
+	padding-left: 30px;
+    text-decoration: none;
+    width: 135px; 
+    height: 30px;
+}
+ul#menu-news li.active, ul#menu-news li:hover {
+    background-color: #322a2b;
+    border: 1px solid #fff;
+}
+
+.grid-container-news {
+  margin:-10px 0 -20px 30px;
+  width:960px;
+  z-index: 12;
+  display: inline-grid;
+  grid-template-columns: auto auto auto ;
+}
+.grid-container-news2 {
+  margin:30px;
+  	width:960px;
+	z-index: 12;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto ;
+}
+
+    .box-notizie{width:300px; float:left; margin: 50px 0px 20px 30px;}
+    .box-notizie:first-child{margin: 50px 0 20px 0;}
+    .box-notizie h3{
+		margin:-5px 0 0 0;
+		padding:20px 20px 20px 15px; 
+		background: #003366;
+		color:#fff; font-family:oswald; 
+		text-transform:uppercase;
+		font-weight: normal;
+		}
+		
+	.box-notizie p{color:#6d6b6a;font-size:12px}
+	.box-notizie a{font-family:oswald; text-transform:uppercase;font-weight: normal;
+	color:#322a2b; text-decoration:none;}
+
+.box-notizie a:hover {
+	color:#333;
+	text-decoration:underline;
+}
+
+    .box-notizie2{width:300px; float:left; margin: 0px 0px -20px 30px;}
+    .box-notizie2:first-child{margin: 0px 0 20px 0;}
+    .box-notizie2 h3{
+		margin:-5px 0 0 0;
+		padding:20px 20px 20px 15px; 
+		background: #003366;
+		color:#fff; font-family:oswald; 
+		text-transform:uppercase;
+		font-weight: normal;
+		}
+		
+	.box-notizie2 p{color:#6d6b6a;font-size:12px}
+	.box-notizie2 a{font-family:oswald; text-transform:uppercase;font-weight: normal;
+	color:#322a2b; text-decoration:none;}
+
+.box-notizie2 a:hover {
+	color:#333;
+	text-decoration:underline;
+}
+
+#banner-news2 {
+	margin-top:60px;
+	position:relative;
+	height: 400px;
+	overflow: hidden;
+	background: url(img/news-unito-radio-immagine-sezione.jpg) no-repeat center;
+	background-size: cover;
+	filter: drop-shadow(20px 10px 10px black);
+}
+		
+/******** Eventi ********/
+
+.title-eventi{ 
+	font-family:oswald; 
+	text-align:center;
+	margin-top: -70px;
+	padding: 0;
+	font: inherit;
+}
+
+#banner-eventi {
+	top: -120px;
+	position:relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(img/eventi-immagine-portata-radio-unito.jpg) no-repeat center;
+	filter: drop-shadow(5px 5px 10px black); 
+	background-size: cover;
+}
+	
+#banner-eventi h1{
+	font-family:oswald; 
+	text-transform:uppercase; 
+	position:relative;
+	text-align: center;
+    margin:240px 0 110px 0;
+	padding:20px; 
+	font-size: 70px;
+	text-shadow: 2px 2px 4px black;
+	border-width: 5px;
+	}
+
+ul#menu-eventi {
+    font-family: Oswald;
+	text-transform: uppercase;
+    font-size: 20px;
+    margin: 40px 60px 0px 0px;
+    padding: 10px;
+    list-style: none;
+	filter: drop-shadow(10px 10px 3px #696969);
+}
+ul#menu-eventi li {
+    background-color: #003366;
+    display: block;
+	text-align:center;
+    width: 200px;
+    height: 60px;
+    margin: 2px 2px 0 0;
+}
+ul#menu-eventi li a {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    line-height: 30px;
+	text-align:center;
+	padding-top:15px;
+    padding-right: 30px;
+	padding-left: 30px;
+    text-decoration: none;
+    width: 135px; 
+    height: 30px;
+}
+ul#menu-eventi li.active, ul#menu-eventi li:hover {
+    background-color: #322a2b;
+    border: 1px solid #fff;
+}
+
+.grid-container-eventi {
+  margin:10px 0 -20px 30px;
+  width:960px;
+  z-index: 12;
+  display: inline-grid;
+  grid-template-columns: auto auto auto ;
+}
+.grid-container-eventi2 {
+  margin:30px;
+  	width:960px;
+	z-index: 12;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto ;
+}
+
+    .box-eventi{width:300px; float:left; margin: 40px 0px 20px 30px;}
+    .box-eventi:first-child{margin: 40px 0 20px 0;}
+    .box-eventi h3{
+		margin:-5px 0 0 0;
+		padding:20px 20px 20px 15px; 
+		background: #003366;
+		color:#fff; font-family:oswald; 
+		text-transform:uppercase;
+		font-weight: normal;
+		}
+		
+	.box-eventi p{color:#6d6b6a;font-size:12px}
+	.box-eventi a{font-family:oswald; text-transform:uppercase;font-weight: normal;
+	color:#322a2b; text-decoration:none;}
+
+.box-eventi a:hover {
+	color:#333;
+	text-decoration:underline;
+}
+
+    .box-eventi2{width:300px; float:left; margin: 0px 0px -20px 30px;}
+    .box-eventi2:first-child{margin: 0px 0 20px 0;}
+    .box-eventi2 h3{
+		margin:-5px 0 0 0;
+		padding:20px 20px 20px 15px; 
+		background: #003366;
+		color:#fff; font-family:oswald; 
+		text-transform:uppercase;
+		font-weight: normal;
+		}
+		
+	.box-eventi2 p{color:#6d6b6a;font-size:12px}
+	.box-eventi2 a{font-family:oswald; text-transform:uppercase;font-weight: normal;
+	color:#322a2b; text-decoration:none;}
+
+.box-eventi2 a:hover {
+	color:#333;
+	text-decoration:underline;
+}	
+
+
+.titolo-notizie {
+	font-family:oswald;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	font-size:22px;
+	line-height: 40px;
+	color: #003366;
+}
+.testo_notizia{
+    margin-top: 30px;
+    margin-bottom: 30px;
+	width:960px;
+}
+.img-notizia{
+	margin-top: -15px;
+}
+.testo_notizia blockquote {
+	float: left; padding: 15px 15px 15px 0;
+    display: block;
+    padding: 15px 20px 15px 45px;
+    margin: 25px 20px 10px 0px;
+    position: relative;
+    font-size: 25px;
+    line-height: 32px;
+    color: #003366;
+    width: 28%;
+    border: none ;
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    -webkit-box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px #ccc;
+}
+
+.testo_notizia blockquote::before {
+    content: "\201C";
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #003366;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+ 
+
+/*--icone articolo--*/
+
+.condivisione{
+margin:-10px;
+}
+
+.iniziale {
+	color:#003366;	 
+ }
+.tempo{
+margin-top:-10px;
+}
+
+.fb{
+color:#1877f1;
+font-size: 1.3em;
+}
+
+.ld{
+color:#1da1f2;
+font-size: 1.3em;
+}
+
+.tw{
+color:#007bb5;
+font-size: 1.3em;
+}
+
+.wa{
+color:#25d366;
+font-size: 1.3em;
+}
+
+.pi{
+color:#bd081c;
+font-size: 1.3em;
+}
+
+.testo_notizia blockquote::after {
+    content: "";
+}
+
+.testo_notizia blockquote a {
+    text-decoration: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 0 3px;
+    color: #c76c0c;
+}
+
+.testo_notizia blockquote a:hover {
+    color: #666;
+}
+
+.testo_notizia blockquote em {
+    font-style: italic;
+}
+
+.separatore{
+		text-align:left;
+		width:960px;
+		color: #c76c0c;
+	}
+
+#contenuto-notizia {
+	margin: 0 auto;
+	width:960px;
+	z-index: 12;
+	position:relative;
+	}
+    .box-news-p{width:300px; float:left; margin: 70px 0px 50px 30px;}
+    .box-news-p:first-child{margin: 70px 0 50px 0;}
+    .box-news-p h3{
+		margin:-5px 0 0 0;
+		padding:20px 20px 20px 20px; 
+		background: #003366;
+		color:#fff; font-family:oswald; 
+		text-transform:uppercase;
+		font-weight: normal;
+		}
+		
+	.box-news-p p{color:#6d6b6a;font-size:12px}
+	.box-news-p a{font-family:oswald; text-transform:uppercase;font-weight: normal;
+	color:#322a2b; text-decoration:none;}
+
+.box-news-p a:hover {
+	color:#333;
+	text-decoration:underline;
+}	
+
+#banner-articolo {
+	margin-top:60px;
+	position:relative;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	background: url(img/news-unito-radio-immagine-sezione.jpg) no-repeat center;
+	background-size: cover;
+	filter: drop-shadow(20px 10px 10px black);
+}
+
+.titolo-notizie2{ 
+	font-family:oswald; 
+	text-align:center;
+	margin-top: 80px;
+	margin-bottom: -30px;
+	padding: 0;
+	font: inherit;
+	}
+
+/********la-storia-della-radio********/
+
+#layout-alternato{
+	width:960px;
+	z-index: 12;
+	position:relative;
+	}
+	
+	#layout-alternato2{
+	margin: 0px;
+	width:960px;
+	z-index: 12;
+	position:relative;
+	}
+	
+#banner-storia {
+	top: -120px;
+	position:relative;
+	height: 600px;
+	overflow: hidden;
+	background: url(img/le-origini-della-radio-radiowave.jpg) no-repeat center;
+	filter: drop-shadow(5px 5px 10px black); 
+	background-size: cover;
+}
+	
+#banner-storia h1{
+	font-family:oswald; 
+	text-transform:uppercase; 
+	position:relative;
+	text-align: center;
+    margin:300px 0 110px 0;
+	padding:20px; 
+	font-size: 80px;
+	text-shadow: 2px 2px 4px black;
+	border-width: 5px;
+	}
+	
+.foto-sinistra{
+margin:-20px 50px 20px 100px;
+padding-left:50px;
+overflow:hidden;	
+}
+
+.foto-destra{
+margin:150px 120px 20px 700px;	
+}
+
+.testo-laterale{
+position:absolute;
+color:#696969;
+font-family: Lato, sans-serif;
+font-size: 20px;
+line-height: 30px;
+	padding: 40px 40px 60px 40px;
+margin:-550px -250px 80px 580px;
+	background-color: white;
+	filter: drop-shadow(5px 5px 10px black);
+}
+
+.testo-laterale2{
+position:absolute;
+color:#696969;
+font-family: Lato, sans-serif;
+font-size: 20px;
+line-height: 30px;
+margin:230px 200px 180px 120px;
+	background-color: white;
+	filter: drop-shadow(5px 5px 10px black);
+	padding: 20px 40px 20px 40px;
+	
+}
+
+#banner-storia2 {
+	margin-top:20px;
+	position:relative;
+	height: 400px;
+	overflow: hidden;
+	background: url(img/evento-storia-radio-unito.jpg) no-repeat bottom;
+	background-size: cover;
+	filter: drop-shadow(20px 10px 10px black);
+}
+
+.titolo-unico {
+    margin-top: 30px;
+	line-height: 30px;
+	color:#555555;
+	text-transform: none;
+	font-family:oswald;
+	font-size: 50px;
+}
+
+.titolo-unico2 {
+    margin-top: 30px;
+	color:#555555;
+	text-transform: uppercase;
+	font-family:oswald;
+	font-size: 50px;
+	text-transform: none;
+}
+
+#banner-origini {
+	top: 60px;
+	position:relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(img/le-origini-radiowave-unito-radio.jpg) no-repeat center;
+	filter: drop-shadow(5px 5px 10px black); 
+	background-size: cover;
+}
+
+	
+#banner-origini h1{
+	font-family:oswald; 
+	text-transform:uppercase; 
+	position:relative;
+	text-align: center;
+    margin:225px 0 110px 0;
+	padding:20px; 
+	font-size: 80px;
+	text-shadow: 2px 2px 4px black;
+	border-width: 5px;
+	}
+
+	
+#banner-protagonisti {
+	top: 60px;
+	position:relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(img/prove-in-sala-registrazione-radio-unito.jpg) no-repeat center;
+	filter: drop-shadow(5px 5px 10px black); 
+	background-size: cover;
+}
+	
+#banner-protagonisti h1{
+	font-family:oswald; 
+	text-transform:uppercase; 
+	position:relative;
+	text-align: center;
+    margin:225px 0 110px 0;
+	padding:20px; 
+	font-size: 80px;
+	text-shadow: 2px 2px 4px black;
+	border-width: 5px;
+	}
+	
+.grid-container-protagonisti {
+	margin: 120px;
+	margin-bottom:20px;
+  	width:960px;
+	z-index: 12;
+  display:inline-grid;
+  grid-template-columns: auto auto auto auto ;
+}
+
+    .box-protagonisti{width:300px; float:left; margin: 0px 0px 0px 0px;}
+    .box-protagonisti:first-child{margin: 0px 0 10px 0;}
+    .box-protagonisti h3{
+		margin:-5px 0 0 0;
+		padding:20px 20px 20px 20px; 
+		background: #003366;
+		color:#fff; font-family:oswald; 
+		text-transform:uppercase;
+		font-weight: normal;
+		}
+		.didascalia{
+			text-align: center;
+			font-size: 20px;
+		}
+		
+	.protagonisti p{color:#6d6b6a; font-size:20px;}
+	.protagonisti a{font-family:oswald; text-transform:uppercase;font-weight: normal;
+	color:#322a2b; text-decoration:none;}
+
+.protagonisti a:hover {
+	color:#333;
+	text-decoration:underline;
+}
+
+.link-social-protagonisti{
+margin-top: -5px;
+text-align:center;
+}	
+
+.title-programma{ 
+	font-family:oswald; 
+	text-align:center;
+	margin-top: 50px;
+	padding: 0;
+	font: inherit;
+}
+
+
+#banner-contatti {
+	top: -120px;
+	position:relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(img/homepage-studente-auricolari-radio-unito.jpg) no-repeat center;
+	filter: drop-shadow(5px 5px 10px black); 
+	background-size: cover;
+}
+	
+#banner-contatti h1{
+	font-family:oswald; 
+	text-transform:uppercase; 
+	position:relative;
+	text-align: center;
+    margin:240px 0 110px 0;
+	padding:20px; 
+	font-size: 70px;
+	text-shadow: 2px 2px 4px black;
+	border-width: 5px;
+	}
+	
+.titolo-form{ 
+	font-family:oswald; 
+	text-align:center;
+	margin-top:-80px;
+	padding: 0;
+	font: inherit;
+	}
+
+
+.sottotitolo{
+	line-height: 26px;
+	color: #808080;
+	text-align:center;
+	font-size:25px;
+	margin-top: 20px;
+	font-family: Raleway,  sans-serif;
+	
+}
+
+/****form-contatti****/
+
+.form-contatti{
+	margin-top: 60px;
+	text-align: center;
+	transition: all 4s ease-in-out;
+	border-radius: 6px;
+	font-family:oswald;
+}
+
+.placeholder{
+color: yellow;
+}
+
+.form-control{
+width: 600px;
+background:#f2eeec;	
+border:none;
+outline: none;
+border-bottom: 1px solid gray;
+color: black;
+font-size: 18px;
+margin-bottom: 16px;
+}
+
+input{
+height: 40px;
+}
+
+textarea{
+margin-top: 20px;
+font-family:sans-serif;
+}
+
+
+form .submit{
+	border-radius: 8px;
+	background:#003366;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	width: 300px;
+	height:50px;
+	margin-top:20px;
+}
+
+form .submit:hover{
+	border-radius: 6px;
+	color: #FFD700;
+	cursor: pointer;
+}
+
+
+/*** Gmaps ***/
+
+#banner-gmaps {
+	margin-top:40px;
+	position:relative;
+	background-size: cover;
+	filter: drop-shadow(20px 10px 10px black);
+}
+
+
+
+/*** Footer ***/
+#footer {
+	clear:both;
+	width:100%;
+	min-height: 100px;
+	border-top: 2px solid white;
+	background:#322a2b url(img/logo-small.png) no-repeat 45px 40px;
+	color:#a8a8a8;
+	position:relative;
+}
+
+#footer p{ 
+font-size:12px; margin:33px 0 0px 100px;float:left;
+}
+/*css-valido*/
+.icona-css{
+	border:0;
+	width:88px;
+	height:31px;
+	margin-top: 40px;
+	margin-left:680px;
+	position:relative;
+}
+
+/*
+@media screen and (max-width: 768px) {
+  .grid-container-playlist {
+	  width: 66%;
+  }
+  .grid-container-playlist .grid-item {
+	   width: 70%;
+	   margin-right: 0;
+  }
+  .grid-container-playlist .grid-item iframe {
+	   width: 100%;
+  }
+  .grid-container-playlist-r {
+	  width: 66%;
+  }
+  .grid-container-playlist-r .grid-item {
+	   width: 70%;
+	   margin-right: 0;
+  }
+  .grid-container-playlist-r .grid-item iframe {
+	   width: 100%;
+  }
+  aside {
+	  display: inline-block;
+	  width: 18%;
+	  float: unset;
+	  position: absolute;
+	  right: 20%;
+	  
+  }
+  body {
+	  overflow-x: hidden;
+}
+.titolo-playlist h4 {
+	font-size: 2em;
+}
+#banner-playlist h1 {
+font-size: 3em;
+}
+
+}*/
+
+@media screen and (max-width: 1290px) {
+  .grid-container-playlist {
+	  width: 66%;
+  }
+  .grid-container-playlist .grid-item {
+	   width: 70%;
+	   margin-right: 0;
+  }
+  .grid-container-playlist .grid-item iframe {
+	   width: 100%;
+  }
+  .grid-container-playlist-r {
+	  width: 66%;
+  }
+  .grid-container-playlist-r .grid-item {
+	   width: 70%;
+	   margin-right: 0;
+  }
+  .grid-container-playlist-r .grid-item iframe {
+	   width: 100%;
+  }
+  aside {
+	  display: inline-block;
+	  width: 18%;
+	  float: unset;
+	  position: absolute;
+	  right: 20%;
+	  
+  }
+  body {
+	  overflow-x: hidden;
+}
+.titolo-playlist h4 {
+	font-size: 2em;
+}
+#banner-playlist h1 {
+font-size: 3em;
+}
+
+}
+
+.main {
+	background-color: #FFFFFF;
+	width: 400px;
+	height: 400px;
+	margin: 7em auto;
+	border-radius: 1.5em;
+	box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+	padding-top: 40px;
+	color: #8C55AA;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.un {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+form.form1 {
+	padding-top: 40px;
+}
+
+.pass {
+		width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+.un:focus, .pass:focus {
+	border: 2px solid rgba(0, 0, 0, 0.18) !important;
+	
+}
+
+.registersubmit {
+  cursor: pointer;
+	border-radius: 5em;
+	color: #fff;
+	background: linear-gradient(to right, #9C27B0, #E040FB);
+	border: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	margin-left: 35%;
+	font-size: 13px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+	text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+	color: #E1BEE7;
+	padding-top: 15px;
+}
+
+@media (max-width: 600px) {
+	.main {
+		border-radius: 0px;
+	}
+
+}
