@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <title>EVE || Chi Siamo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="angular.js"></script>
+</head>
+<body ng-app="myApp">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><strong>Evole Visual Entertainment</strong> </a>
+    </div>
+    <div class="nav navbar-nav navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="chisiamo.html">Chi siamo</a></li>
+        <li><a href="contatti.html">Contattaci</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+   <div class="col-sm-8 staccato">
+    <h1> Cos'è EVE? </h1>
+    <h4> oppure, chi è EVE?</h4>
+    <p> EVE è un collettivo di professionisti composto da video maker, fotografi, grafici, video maker, web developer, <br>
+     social media manager e psicologi.</p>
+    <p>Si propone come una soluzione alternativa ad una "normale" agenzia di comunicazione</p>
+    <p>Una realtà fatta di professionisti al vostro servizio che provengono da esperienze e settori differenti, ma che <br>
+     come mission hanno la stessa: intesa e risultato.</p>
+    <h2> Una nostra idea per il tuo progetto!</h2>
+   </div>
+ <div class="col-sm-4 staccato">
+  <img src="img/staff.jpg" alt="staff" id="staff">
+ </div>
+</div>
+
+<div class="row centro" ng-controller="myCtrl">
+  <h2 class="staccato" align="center"> Alcune nostre collaborazioni<br> </h2><br>
+
+  <div class="col-sm-4">
+    <img src="img/torinofilmfestival.png" alt="tff" class="prog" onmouseover="brd(this)" onmouseout="nBrd(this)">
+  </div>
+
+  <div class="col-sm-4">
+    <img src="img/creattiva.png" alt="creattiva" class="prog" onmouseover="brd(this)" onmouseout="nBrd(this)">
+  </div>
+
+  <div class="col-sm-4">
+    <img src="img/rai.png" alt="rai" class="prog" onmouseover="brd(this)" onmouseout="nBrd(this)">
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#">Partners</a>
+  <a href="#">Note legali</a>
+  <a href="#">Trattamento dati personali</a>
+  <h6><strong>Evolve Visual Entertainment srl </strong><br>Partita Iva: 12345678910111213</h6>
+
+</footer>
+
+</body>
+</html>
