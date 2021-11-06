@@ -1,0 +1,26 @@
+.piu {
+  padding-left: 0.4em;
+  padding-right: 0.2em;
+  color:#d11507;
+  font-size: 120%;
+
+}
+.par {
+  font-size: 120%;
+  margin-top: 0.05em;
+  margin-bottom: 0.05em;
+}
+.box {
+  border-style: solid;
+  border-color:#808080;
+  margin-right: 0em;
+  margin-bottom: 0.1em;
+  border-bottom-left-radius: 1.000em;
+  border-top-right-radius: 1.000em;
+  font-family: Arial,sans-serif;
+}
+
+.slide {
+  padding-left: 2.2em;
+  display: none;
+}

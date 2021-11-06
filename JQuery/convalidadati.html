@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> CONVALIDA DATI </title>
+<link href="base_css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <form id="form1">
+    <label for="nome"> Nome: </label>
+    <input type="text" name="nome" class="check"><br>
+    <label for="cognome"> Cognome: </label>
+    <input type="text" name="cognome" class="check"><br>
+    <label for="email"> email: </label>
+    <input type="email" name="email" class="check"><br>
+    <label for="matricola"> numero di matricola: </label>
+    <input type="number" name="matricola" class="check"><br>
+    <label for="eta"> Quanti anni hai? </label>
+    <select name="eta" class="check">
+      <option value=""> seleziona la fascia d'età </option>
+      <option value="18-24">18-24</option>
+      <option value="25-40">25-40</option>
+      <option value="40-60">40-60</option>
+      <option value="over 60">over 60</option>
+    </select><br>
+    <input type="submit" id="convalida" value="Invia">
+  </form>
+ <p id="feedback"></p>
+ <a href="assignment3.html"> Torna indietro </a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="my_js.js"></script>
+
+</body>
+</html>
