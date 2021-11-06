@@ -1,0 +1,274 @@
+/* ===== RESET CSS ===== */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=========== HEAD ===========*/
+
+video{
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: auto;
+ z-index: -100;
+ visibility: visible;
+ opacity: 0.2;
+}
+
+body {
+    padding: 20px;
+}
+
+h2{
+	font-size: 32px;
+}
+
+h3{
+	font-size: 28px;
+}
+
+/*=========== BODY ==========*/
+
+/*===== HEADER =====*/
+
+header {
+    padding: 30px;
+    font-size: 80px;
+    text-align: center;
+    font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+h1 .rosso{
+  color: #e60000;
+}
+
+h1 .blu{
+  color: #0099cc;
+}
+
+h1 .giallo{
+  color: #ffcc00;
+}
+
+/*===== NAV =====*/
+
+nav {
+    overflow: hidden;
+    background-color: #262626;
+    font-size: 20px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+nav .active, a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*===== FOOTER =====*/
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #e6e6e6;
+    margin-top: 20px;
+}
+
+.mail a{
+  color: black;
+}
+
+.copyright{
+  color: black;
+}
+
+.flaticon{
+  color: black;
+}
+
+
+/*===== HOME =====*/
+
+#content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.panel {
+     padding: 20px;
+     margin-top: 20px;
+     font-size: 24px;
+     font-family: "Times New Roman", Times, Georgia, serif;
+		 background-color: #fcfbe9;
+}
+
+a.rosso{
+  color: #e60000;
+  text-decoration: none;
+	font-size: 30px;
+}
+
+a.blu{
+  color: #0099cc;
+  text-decoration: none;
+	font-size: 30px;
+}
+
+a.giallo{
+  color: #ffcc00;
+  text-decoration: none;
+	font-size: 30px;
+}
+
+#rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+/*===== BIBLIOTECHE =====*/
+
+#img-biblioteca{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+ul{
+  list-style-image: url(IMG/arrow.png);
+  margin-left: 30px;
+}
+
+ul a{
+  color: black;
+}
+
+ul a:hover{
+	background-color: #f2f2f2;
+}
+
+ul li{
+	margin-bottom: 5px;
+}
+
+/*===== SCHEDA BIBLIOTECA =====*/
+
+table{
+	table-layout: fixed;
+	width: 400px;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 5px;
+	caption-side: top;
+}
+
+th {
+    background-color: #ddd;
+    border: 1px solid #fff;
+    color: black;
+}
+
+/*===== AULE STUDIO =====*/
+
+#aulastudio{
+	width: 100%;
+	margin-top: 20px;
+	
+}
+
+ul{
+  list-style-image: url(IMG/arrow.png);
+  margin-left: 30px;
+}
+
+/*===== MAPPA =====*/
+
+#map{
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#map iframe{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/*===== FORM =====*/
+
+#form{
+	width: 100%;
+	margin-top: 20px;
+}
+
+ul{
+	list-style-image: url(IMG/arrow.png);
+	margin-left: 30px;
+}
+
+/*===== INFO =====*/
