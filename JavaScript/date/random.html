@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Random </title>
+<h2> RANDOM </h2>
+<h3> Create una funzione gioco() che chiede all’utente di indovinare un numero tra 1 e 10 </h3>
+  <h4>Se l’utente indovina incrementate la variabile giusto, se invece non indovina, <br>
+incrementate la variabile sbagliato, in questo modo tenete conto dei due punteggi </h4><br>
+<h4> Fate output del valore delle variabili con un alert e consentite all’utente di richiamare la funzione da un bottone html (tag button) </h4>
+<link href="mio_css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form action="#" id="form1">
+     <label for="giocata"> Vuoi giocare? Indovina un numero da 1 a 10 </label><br>
+     <input type="number" id="giocata"><br>
+     <input type="button" onclick="alert(gioco());" value="Gioca">
+</form>
+
+<p><a href="assignment1.html">Torna indietro</a></p>
+<p id="pc"></p>
+<p id="utente"></p>
+<p id="risultato"></p>
+<p id="conteggio"></p>
+
+<script type="text/javascript">
+
+var giusti=0;
+var sbagliati=0;
+var randomico,giocata,risultato,stampa,conteggio;
+
+function gioco() {
+        /* Recupero numero giocato ed effettuo il controllo che sia un numero compreso tra 1 e 10.
+        Di proposito non ho inserito l'input type numer cosi posso effettuare anche il controllo "isNaN()" */
+        giocata = parseInt(document.getElementById('giocata').value);
+
+       if (giocata<10 && giocata>0 && !isNaN(giocata)) {
+                                                        // Genero numero randomico da 0 a 9 e sommo 1.
+                                                        randomico = (Math.floor(Math.random()*10)) + 1;
+                                                        // lo stampo
+                                                        document.getElementById('pc').innerHTML="Numero generato: " + randomico;
+                                                        //insieme a quello inserito dall'utente che recupero dal form
+                                                        document.getElementById('utente').innerHTML="Il tuo numero: " + giocata;
+                                                        // preparo il risultato
+                                                      if (giocata==randomico) {
+                                                                 ++giusti;
+                                                                 risultato="Complimenti!! Hai indovinato il numero! ";
+                                                       } else {
+                                                                 ++sbagliati;
+                                                                 risultato="Mi dispiace, non hai indovinato. Riprova! ";
+                                                        }
+                                                        // aggiorno il conteggio, lo stampo e invio l'alert
+                                                        document.getElementById('risultato').innerHTML=risultato;
+                                                        conteggio="Totale giusti: " + giusti +". Totale sbagliati: " + sbagliati + ".";
+                                                        document.getElementById('conteggio').innerHTML=conteggio;
+                                                        stampa=risultato + conteggio;
+                                                        return stampa;
+          } else {
+          // comunico errore
+            stampa = "Devi seguire le regole del gioco (numero da 1 a 10)";
+            return stampa;
+         }
+}
+</script>
+</body>
+</html>

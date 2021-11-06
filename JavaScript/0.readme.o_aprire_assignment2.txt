@@ -1,0 +1,2 @@
+Ho scritto come nel primo assignment un file HTML rinominato "assignment2.html"
+si può aprire quello senza il bisogno di aprire tutti gli altri e navigare tra gli esercizi.

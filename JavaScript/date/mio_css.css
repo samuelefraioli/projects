@@ -1,0 +1,15 @@
+footer {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 47%;
+ }
+
+#datacontainer {
+  background-color: blue;
+  color: blue;
+  border-radius: 30%;
+ }
+
+#vuoto{
+  padding-right:15em;
+}

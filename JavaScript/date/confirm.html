@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Confirm </title>
+<h2> CONFIRM </h2>
+<h3> Inserire una funzione che richiama una finestra di confirm() in cui chiedete all’utente di accettare<br>
+l’utilizzo dei cookies da parte vostra.<br>
+Se l’utente clicca su annulla, con un alert gli dite che non può allora entrare
+nel vostro sito e poi lo <br>reindirizzate alla home page di UNITO con questa istruzione: location.assign("http://www.unito.it/");<br>
+Associare la chiamata della funzione all’evento onLoad del body della home page </h3>
+<link href="mio_css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="my_cookie();">
+
+<a href="assignment1.html"><p>Torna indietro</p></a>
+<p id="feed"></p>
+
+<script type="text/javascript">
+function my_cookie(){
+            var agree = confirm("In questa pagina vengono utilizzati dei cookie: premi 'OK' per accettare, 'Cancel' per rifiutare.");
+
+              if (agree) {
+                        // salvo il nome
+                        var nome = prompt("Come ti chiami?","Cristina");
+                        document.cookie=nome;
+                        // seleziono l'indice fino a dove stampare
+                        var fine = document.cookie.indexOf('=');
+                       // stampo risultato da posizione 0 al simbolo divisorio. Quindi l'ultimo nome registrato
+                                  if (nome==null) {
+                                                     document.getElementById('feed').innerHTML="Hai annullato la registrazioe del tuo nome. Per vederlo scritto qui ricarica la pagina :)";
+                                                   } else {
+                                                     document.getElementById('feed').innerHTML="abbiamo salvato " + document.cookie.substring(0,fine);
+                                                  }
+
+                } else {
+                    alert("Mi dispiace ma non puoi accedere a questa pagina senza aver accettato i cookie. Verrai reinderizzato.")
+                    location.assign("https://www.unito.it");
+            }
+  }
+</script>
+</body>
+</html>

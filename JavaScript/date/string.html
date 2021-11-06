@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> String </title>
+<h2> STRING </h2>
+<h3>Nella vostra pagina che contiene un form inserite una funzione manipolaStringa() che prende come parametro una stringa <br>
+  e la restituisce tutta in maiuscolo. Chiamate la funzione all’interno di un campo di input e associatela all’evento onBlur<br>
+Alla funzione dovete passare come parametro il valore che l’utente inserirà dentro quel campo di testo, ossia il paramentro this.value.<br>
+ Inserite la chiamata della funzione dentro un alert, per fare output del risultato della funzione <br>
+La funzione si attiverà quando l’utente, dopo avere scritto qualcosa nel campo di input, muoverà il mouse da qualche altra parte
+</h3>
+<link href="mio_css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<a href="assignment1.html"><p>Torna indietro</p></a>
+
+  <form action="#" id="form1" name="form1">
+    <label for="stringa"> Scrivere qualcosa: </label><br><br>
+    <input type="text" id="stringa" name="stringa" onblur="alert(manipolaStringa(this.value));"><br><br>
+    <input type="submit" value="Invia">
+  </form>
+
+
+<script type="text/javascript">
+function manipolaStringa(minuscolo){
+
+             var stampa;
+                if (minuscolo!=="") {
+                      stampa=minuscolo.toUpperCase();
+                   } else {
+                      stampa="Ops, scrivi qualcosa :)";
+                   }
+                   return stampa;
+}
+</script>
+</body>
+</html>
